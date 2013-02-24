@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 ruby "1.9.3"
 
 gem 'rails',                '3.2.11'
@@ -30,14 +30,14 @@ end
 
 group :test do
   gem 'fakeweb',            '1.3.0'
-  gem 'shoulda-matchers',   '1.1.0'
+  gem 'shoulda-matchers',   '1.4.2'
   gem 'timecop',            '0.3.5'
   gem 'simplecov', '0.6.1', :require => false
   # gem 'guard-rspec', '2.1.0'
 end
 
 group :development, :test do
-  gem 'rspec-rails',        '2.11.0'
-  gem 'factory_girl_rails', '1.7.0'
-  gem 'pry-rails',          '0.1.6'
+  gem 'rspec-rails',        '2.13.0'
+  gem 'factory_girl_rails', '4.2.1'
+  gem 'pry-rails',          '0.2.2'
 end
