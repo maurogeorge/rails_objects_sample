@@ -16,4 +16,14 @@ describe Post do
       end
     end
   end
+
+  describe "validations" do
+
+    context "presence" do
+
+      [:content, :title].each do |attr|
+        it { should validate_presence_of(attr) }
+      end
+    end
+  end
 end
