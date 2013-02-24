@@ -9,6 +9,12 @@ describe User do
         it { should allow_mass_assignment_of(attr) }
       end
     end
+
+    context "not allowed values" do
+      [:id, :created_at, :updated_at].each do |attr|
+        it { should_not allow_mass_assignment_of(attr) }
+      end
+    end
   end
 
   describe "validations" do
