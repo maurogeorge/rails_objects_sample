@@ -1,0 +1,11 @@
+%h2
+  Posts
+
+- if @posts.any?
+  %ul
+    - @posts.each do |post|
+      %li
+        = post.title
+- else
+  %p
+    Sem posts no momento =/
